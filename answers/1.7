@@ -1,0 +1,6 @@
+docker image ls
+docker rmi <image_id> (I took all the image ids of image created less than 2 hours ago)
+sometimes I had this type of error : "image is being used by stopped container 7fd7d05f8aca"
+so I had to run : "docker rm <container_id>"
+then I could remove images
+(for the tags I had to put the image names instead of the id)
