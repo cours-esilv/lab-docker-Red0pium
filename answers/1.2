@@ -1,3 +1,19 @@
 This is the type of file you need to create to answer the questions in the TP.
 
 Write your answers directly in a file named according to each question in the statement (e.g. 1.4).
+
+Created a Dockerfile with this content:
+
+FROM python:3.9.13
+
+WORKDIR /app/back
+
+COPY requirements.txt .
+
+RUN pip install -r requirements.txt
+
+COPY . .
+
+CMD ["python3", "-m", "flask", "run", "--host=0.0.0.0"]
+
+then ran "cd app/back" then "docker build -t labdocker ." in the terminal
