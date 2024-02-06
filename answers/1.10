@@ -1,1 +1,5 @@
-docker exec -it back /bin/bash
+docker exec -it something_meaningful /bin/bash
+
+cat /etc/*release
+
+The OS used is Debian GNU/Linux
